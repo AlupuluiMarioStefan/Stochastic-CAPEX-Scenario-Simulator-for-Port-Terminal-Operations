@@ -1,7 +1,7 @@
 # terminalsim — Container Terminal Simulation
 
 [![CI](https://github.com/AlupuluiMarioStefan/Stochastic-CAPEX-Scenario-Simulator-for-Port-Terminal-Operations/actions/workflows/ci.yml/badge.svg)](https://github.com/AlupuluiMarioStefan/Stochastic-CAPEX-Scenario-Simulator-for-Port-Terminal-Operations/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A discrete-event simulation of a container terminal built with [SimPy](https://simpy.readthedocs.io/).

@@ -7,7 +7,7 @@ name = "terminalsim"
 version = "1.0.0"
 description = "SimPy discrete-event simulation of a container terminal: queues, opening hours, inspections, investment analysis"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 dependencies = ["simpy>=4.0"]
 keywords = ["simulation", "discrete-event", "simpy", "operations-research", "port", "logistics"]
