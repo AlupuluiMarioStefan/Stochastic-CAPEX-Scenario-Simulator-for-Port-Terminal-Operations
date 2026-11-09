@@ -1,0 +1,101 @@
+{
+  "arrival_rate_per_week": 8.0,
+  "feeder_share": 0.65,
+  "booking_hours": 120.0,
+  "feeder": {
+    "fee_min": 4000,
+    "fee_max": 12000,
+    "fee_limit": 9000,
+    "divert_prob": 0.3,
+    "tow_prob": 0.3,
+    "tow_time": {
+      "dist": "fixed",
+      "value": 6,
+      "low": 0.0,
+      "high": 0.0,
+      "mean": 0.0
+    }
+  },
+  "deep_sea": {
+    "fee_min": 25000,
+    "fee_max": 60000,
+    "fee_limit": 50000,
+    "divert_prob": 0.1,
+    "tow_prob": 1.0,
+    "tow_time": {
+      "dist": "exp",
+      "value": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "mean": 18
+    }
+  },
+  "teams": [
+    {
+      "name": "alpha",
+      "share": 0.4,
+      "unload_hours": 8.0,
+      "capacity": 1
+    },
+    {
+      "name": "bravo",
+      "share": 0.35,
+      "unload_hours": 11.0,
+      "capacity": 1
+    },
+    {
+      "name": "charlie",
+      "share": 0.25,
+      "unload_hours": 16.0,
+      "capacity": 1
+    }
+  ],
+  "restack": {
+    "after_team": "charlie",
+    "prob": 0.25,
+    "keep_prob": 0.2,
+    "hours": 2.0,
+    "handover": {
+      "alpha": 0.5,
+      "bravo": 0.5
+    }
+  },
+  "crane_time_reduction": 0.0,
+  "restack_in_place": false,
+  "customs": {
+    "capacity": 1,
+    "scan_hours": 4.0,
+    "minor_prob": 0.08,
+    "minor_hours": 1.0,
+    "major_prob": 0.02,
+    "major_hours": 4.0,
+    "major_team": "alpha"
+  },
+  "paper_check": null,
+  "security_alert": null,
+  "opening": {
+    "open_hour": 6.0,
+    "close_hour": 22.0,
+    "closed_days": [
+      6
+    ]
+  },
+  "barge": {
+    "departure_hour": 18.0,
+    "no_departure_days": [
+      6
+    ]
+  },
+  "sail": {
+    "dist": "uniform",
+    "value": 0.0,
+    "low": 5,
+    "high": 9,
+    "mean": 0.0
+  },
+  "warmup_hours": 0.0,
+  "agreed_hours": {
+    "feeder": 104.0,
+    "deep-sea": 130.0
+  }
+}
